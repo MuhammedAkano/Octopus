@@ -24,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         });
 
-
         // Add a single Save button after all rows
         const saveButton = document.createElement("button");
         saveButton.textContent = "Save All Changes";
@@ -52,7 +51,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Fetch and update the table when the page loads
     fetchDataAndUpdateTable();
-
 
     function saveAllChanges() {
         const rows = tableBody.querySelectorAll("tr");
@@ -97,7 +95,6 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log(updatedData);
     }
 
-
     // Function to save data to the server
     function saveDataToServer(updatedData) {
         // Send the updatedData to the server using a POST request to update the JSON file
@@ -126,5 +123,4 @@ document.addEventListener("DOMContentLoaded", function () {
                 alert('An error occurred while saving data');
             });
     }
-
 });
