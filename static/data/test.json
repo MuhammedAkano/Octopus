@@ -1,0 +1,44 @@
+[
+    {"index": 0, "temp_data": {"aggregates": {"daily": {"current": "70", "previous": "7"
+                }, "monthly": {"current": "103", "previous": "128"
+                }, "weekly": {"current": "32", "previous": "36"
+                }
+            }, "work-type": "Office"
+        }
+    },
+    {"index": 1, "temp_data": {"aggregates": {"daily": {"current": "7", "previous": "2"
+                }, "monthly": {"current": "23", "previous": "29"
+                }, "weekly": {"current": "10", "previous": "8"
+                }
+            }, "work-type": "Support"
+        }
+    },
+    {"index": 2, "temp_data": {"aggregates": {"daily": {"current": "0", "previous": "2"
+                }, "monthly": {"current": "13", "previous": "19"
+                }, "weekly": {"current": "4", "previous": "7"
+                }
+            }, "work-type": "Floor"
+        }
+    },
+    {"index": 3, "temp_data": {"aggregates": {"daily": {"current": "3", "previous": "2"
+                }, "monthly": {"current": "11", "previous": "18"
+                }, "weekly": {"current": "4", "previous": "5"
+                }
+            }, "work-type": "Counter"
+        }
+    },
+    {"index": 4, "temp_data": {"aggregates": {"daily": {"current": "2", "previous": "3"
+                }, "monthly": {"current": "21", "previous": "23"
+                }, "weekly": {"current": "5", "previous": "10"
+                }
+            }, "work-type": "Delivery"
+        }
+    },
+    {"index": 5, "temp_data": {"aggregates": {"daily": {"current": "0", "previous": "3"
+                }, "monthly": {"current": "7", "previous": "11"
+                }, "weekly": {"current": "2", "previous": "2"
+                }
+            }, "work-type": "Returns"
+        }
+    }
+]

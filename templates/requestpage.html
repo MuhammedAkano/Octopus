@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+
+<div class="welcome">
+    <h1>O C T O P U S</h1>
+    <p class="welcome-msg">Request a review of your dashboard by selecting a work type</p>
+</div>
+
+<div class ="requestpage-form">
+    <form id="requestForm" action="/request_change" method="POST">
+        <select type= "text" id="workType" name="workType">
+            <option value="Office">Office</option>
+            <option value="Support">Support</option>
+            <option value="Floor">Floor</option>
+            <option value="Counter">Counter</option>
+            <option value="Delivery">Delivery</option>
+            <option value="Returns">Returns</option>
+        </select>
+        <button type="submit" onclick="alert('Request sent')">submit request</button>
+    </form>
+
+</div>
+
+
+<div class = "requestpage-btn">
+    <form method="POST" action="/dashboard">
+        <input type="submit" value="View Dashboard" >  
+    </form>
+    <form action="{{ url_for('logout') }}">
+        <input type="submit" value="Logout" >  
+    </form>
+</div>
+
+{% endblock %}

@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+<div class ="welcome">
+    <h1>O C T O P U S</h1>
+    <p class ="welcome-msg">
+    Here is your detailed dashboard. You can also <span id="reviewrequest" reviewrequest-url = "{{ url_for('reviewrequest') }}">request review</span> of your dashboard</p>
+</div>
+<div class="box">
+    <div class="user">
+      <div class="options">
+        <p class="aggregate-option" id="daily">Daily</p>
+        <p class="aggregate-option" id="weekly">Weekly</p>
+        <p class="aggregate-option" id="monthly">Monthly</p>
+        <p class="aggregate-option" id="logout" data-logout-url = "{{ url_for('logout') }}">Logout</p>
+      </div>
+    </div>
+
+    <ul class="dash-cont">
+      <li class="type office">
+        <div class="type-cont">
+          <p class="worktype">worktype</p>
+          <div class="hrs-cont">
+            <p class="hrs"><span class="work-hrs"></span>hrs</p>
+            <p class="last-week-hrs">
+              Last Week - <span class="work-hrs-span"></span>hrs
+            </p>
+          </div>
+        </div>
+      </li>
+
+      <li class="type support">
+        <div class="type-cont">
+          <p class="worktype">worktype</p>
+
+          <div class="hrs-cont">
+            <p class="hrs"><span class="work-hrs"></span>hrs</p>
+            <p class="last-week-hrs">
+              Last Week - <span class="work-hrs-span"></span>hrs
+            </p>
+          </div>
+        </div>
+      </li>
+
+      <li class="type floor">
+        <div class="type-cont">
+          <p class="worktype">worktype</p>
+
+          <div class="hrs-cont">
+            <p class="hrs"><span class="work-hrs"></span>hrs</p>
+            <p class="last-week-hrs">
+              Last Week - <span class="work-hrs-span"></span>hrs
+            </p>
+          </div>
+        </div>
+      </li>
+
+      <li class="type counter">
+
+        <div class="type-cont">
+          <p class="worktype">worktype</p>
+
+          <div class="hrs-cont">
+            <p class="hrs"><span class="work-hrs"></span>hrs</p>
+            <p class="last-week-hrs">
+              Last Week - <span class="work-hrs-span"></span>hrs
+            </p>
+          </div>
+        </div>
+      </li>
+      <li class="type delivery">
+        <div class="type-cont">
+          <p class="worktype">worktype</p>
+          <div class="hrs-cont">
+            <p class="hrs"><span class="work-hrs"></span>hrs</p>
+            <p class="last-week-hrs">
+              Last Week - <span class="work-hrs-span"></span>hrs
+            </p>
+          </div>
+        </div>
+      </li>
+      <li class="type returns">
+        <div class="type-cont">
+          <p class="worktype">worktype</p>
+          <div class="hrs-cont">
+            <p class="hrs"><span class="work-hrs"></span>hrs</p>
+            <p class="last-week-hrs">
+              Last Week - <span class="work-hrs-span"></span>hrs
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
+</div>
+<div id="userid" userid-data="{{ user_details.userid }}"> </div>
+<script type="module" src="/static/js/main.js"></script>
+
+
+{% endblock %}

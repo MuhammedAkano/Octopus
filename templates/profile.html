@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+<div class="welcome">
+  <h1>O C T O P U S</h1>
+  <p class="welcome-msg">
+    Hi <span>{{ user_details.firstname }}</span>, Octopus found your profile. Here is a summary of your current work
+    hours</p>
+</div>
+<div class="center-profile">
+  <div class="profile-box">
+    <article>
+      <img src="/static/img/bg-pattern-card.svg" alt="" />
+      <div>
+        <img src="{{ user_details.image}}" alt="profile_pic" />
+      </div>
+    </article>
+
+    <article>
+      <h1>{{ user_details.firstname }} {{ user_details.surname }} <span>{{ user_details.age}}</span></h1>
+      <p>Dublin</p>
+    </article>
+
+    <article>
+      <ul>
+        <li>{{ office }}H<span>Office</span></li>
+        <li>{{ support }}H<span>Support</span></li>
+        <li>{{ counter }}H<span>Counter</span></li>
+      </ul>
+    </article>
+    <div class="profile-btn">
+      <form method="POST" action="/dashboard">
+        <input type="submit" value="View Dashboard">
+      </form>
+      <form action="{{ url_for('logout') }}">
+        <input type="submit" value="Logout">
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}
